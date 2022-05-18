@@ -10,11 +10,11 @@ class Header extends Component {
       sign_in_route,
       sign_out_route
     } = this.props
-    console.log("logged_in:", logged_in)
-    console.log("current_user:", current_user)
+    // console.log("logged_in:", logged_in)
+    // console.log("current_user:", current_user)
     return (
       <>
-        <h3>Header</h3>
+        <h3>Sustainable Living Community</h3>
         <Nav>
           {logged_in &&
             <NavItem>
@@ -23,7 +23,7 @@ class Header extends Component {
           }
           {!logged_in &&
             <NavItem>
-              <a href={sign_in_route} className="nav-link">Sign In</a>
+              <a href={sign_in_route} className="nav-link">All Apartments</a>
             </NavItem>
           }
           {!logged_in &&
@@ -31,6 +31,7 @@ class Header extends Component {
               <a href={new_user_route} className="nav-link">Sign Up</a>
             </NavItem>
           }
+            <img src="https://pacificdomes.com/WP/wp-content/uploads/2021/02/dome-homes-featured.jpg"alt="logo for dome" className="domehome" />
         </Nav>
       </>
     )
