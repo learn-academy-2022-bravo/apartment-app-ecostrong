@@ -5,6 +5,5 @@ export default class ApartmentIndex extends Component {
     return (
       <h3>ApartmentIndex</h3>
     )
-    return <h3>Apartment Listings</h3>;
   }
 }

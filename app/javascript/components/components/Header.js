@@ -23,12 +23,12 @@ class Header extends Component {
           }
           {!logged_in &&
             <NavItem>
-              <a href={sign_in_route} className="nav-link">All Apartments</a>
+              <a href={sign_in_route} className="nav-link">Our Domes</a>
             </NavItem>
           }
           {!logged_in &&
             <NavItem>
-              <a href={new_user_route} className="nav-link">Sign Up</a>
+              <a href={new_user_route} className="nav-link">Book a Tour!</a>
             </NavItem>
           }
             <img src="https://pacificdomes.com/WP/wp-content/uploads/2021/02/dome-homes-featured.jpg"alt="logo for dome" className="domehome" />
