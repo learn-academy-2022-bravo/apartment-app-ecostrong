@@ -16,9 +16,7 @@ Enzyme.configure({ adapter: new Adapter() })
 describe("When Footer renders", () => {
   it("displays a heading", () => {
     const footer = shallow(<Footer />)
-    const footerHeading = footer.find("NavItem")
-    expect(footerHeading.text()).toEqual("3")
-    const footerHeading =footer.find("h3")
+    const footerHeading = footer.find("h3")
     expect(footerHeading.text()).toEqual("Footer")
   })
 })
