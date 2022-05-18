@@ -13,10 +13,10 @@ import Header from './Header'
 //Allows us to utilize the adapter we import in earlier, allowing us to call and render a component.
 Enzyme.configure({ adapter: new Adapter() })
 
-describe("When Header renders", () => {
-  it("displays a heading", () => {
+describe("When Header Renders", () => {
+  it("displays a NavItem in Header", () => {
     const header = shallow(<Header />)
-    const headerHeading = header.find("h1")
-    expect(headerHeading.text()).toEqual("This should fail")
+    const headerHeading = header.find("h3")
+    expect(headerHeading.text()).toEqual("header")
   })
 })
